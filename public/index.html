@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <form id="user-create-form" action="./api/user" method="post">
+            <fieldset>
+                <legend>Your Info</legend>
+                <br>
+                Name:
+                <input type="text" id="name">
+                <br>
+                <br>
+                Phone Number:
+                <input type="tel" placeholder="317-256-7799" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone">
+                <br>
+                <br>
+                Email:
+                <input type="email" id="email">
+                <br>
+                <br>
+                Username:
+                <input type="text" id="username">
+                <br>
+                <br>
+                Homepage:
+                <input type="url" id="homepage">
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>What is your preferred method of communication?</legend>
+                <br>
+                <input type="radio" name="preferredCommunication" id="preferEmail">E-Mail
+                <input type="radio" name="preferredCommunication" id="preferPhone">Phone
+                <input type="radio" name="preferredCommunication" id="preferMessageInABottle">Message
+                in a bottle
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Which device do you use?</legend>
+                <input type="checkbox" id="deviceiOS">iOS (iPhone/iPad)
+                <br>
+                <input type="checkbox" id="deviceAndroid"> Android
+                <br>
+                <input type="checkbox" id="deviceMac">Mac
+                <br>
+                <input type="checkbox" id="deviceWindows"> Windows
+                <br>
+                <input type="checkbox" id="deviceChromeOs">Chrome OS (Chromebook)
+                <br>
+                <input type="checkbox" id="deviceLinux">Linux
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Your Inquiry</legend>
+                <br>
+                What is your Inquiry about?
+                <br>
+                <select name="inquryType" id="inquryType">
+                    <option value="InquiryType: Providing Feedback" id="inquireProvidingFeedback">Providing Feedback</option>
+                    <option value="InquiryType: Constructive Criticism" id="inquireConstructiveCriticism">Constructive
+                        Criticism</option>
+                    <option value="InquiryType: Destructive Criticism" id="inquireDestructiveCriticism">Destructive
+                        Criticism</option>
+                    <option value="InquiryType: Breakfast Ideas" id="inquireBreakfastIdeas">Breakfast Ideas</option>
+                </select>
+                <br>
+                Your plan:
+                <input type="text" placeholder="Premium Subscriber" value="" id="inquirePlan">
+                <br>
+                Message:
+                <textarea name="message" value="" id="inquireMessage" cols="20" rows="5"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Send your message</button>
+            <button type="reset">Reset</button>
+        </form>
+        <script src="index.js"></script>
+    </center>
+</body>
+
+</html>

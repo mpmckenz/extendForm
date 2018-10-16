@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+fieldset {
+    border: 1px solid black;
+    width: 500px;
+    background-color: gainsboro;
+    border-radius: 10%;
+}
+
+legend {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    border-radius: 10%;
+
+}
